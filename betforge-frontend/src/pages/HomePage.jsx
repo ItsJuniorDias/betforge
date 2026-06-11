@@ -1,19 +1,50 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { liveGames, upcomingGames, sports, promotions } from "../data/mockData";
+
+import { sports, promotions } from "../data/mockData";
+import { useGames, useLiveGames } from "../hooks/api/useGames";
 import GameCard from "../components/betting/GameCard";
 
-const SPORT_TABS = ["Todos", "Futebol", "Basquete", "E-Sports", "MMA"];
+const SPORT_TABS = [
+  { label: "Todos",    sport: null },
+  { label: "Futebol",  sport: "football" },
+  { label: "Basquete", sport: "basketball" },
+  { label: "E-Sports", sport: "esports" },
+  { label: "MMA",      sport: "mma" },
+];
+
+function GameSkeleton() {
+  return (
+    <div className="bg-[#111318] border border-white/[0.06] rounded-xl h-36 animate-pulse" />
+  );
+}
 
 export default function HomePage() {
   const navigate = useNavigate();
-  const [activeSportTab, setActiveSportTab] = useState("Todos");
+  const [activeSportTab, setActiveSportTab] = useState(null);
+
+  // Jogos ao vivo
+  const { data: liveGames = [], isLoading: loadingLive } = useLiveGames(
+    activeSportTab ?? undefined
+  );
+
+  // Próximos jogos (apenas scheduled)
+  const { data: upcomingData, isLoading: loadingUpcoming } = useGames({
+    status: "scheduled",
+    sport: activeSportTab ?? undefined,
+    limit: 6,
+  });
+  const upcomingGames = upcomingData?.data ?? [];
 
   const statsBar = [
-    { label: "Jogos Ao Vivo", value: "47", change: null },
-    { label: "Maior Odd", value: "45.00", change: "+3.2" },
-    { label: "Mercados", value: "2.300+", change: null },
-    { label: "Novos Hoje", value: "128", change: null },
+    { label: "Jogos Ao Vivo", value: liveGames.length || "–", change: null },
+    { label: "Maior Odd",     value: liveGames.length ? Math.max(
+      ...liveGames.flatMap((g) =>
+        [g.homeOdd, g.drawOdd, g.awayOdd].filter(Boolean)
+      )
+    ).toFixed(2) : "–", change: null },
+    { label: "Mercados",      value: "2.300+", change: null },
+    { label: "Novos Hoje",    value: "128", change: null },
   ];
 
   return (
@@ -46,31 +77,31 @@ export default function HomePage() {
           🏆
         </div>
         <div className="relative z-10 max-w-lg">
-          <span className="inline-block bg-yellow-500/10 text-[#C9A84C] text-[11px] font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-3">
-            🔥 Destaque da Semana
+          <span className="inline-block bg-green-500/10 text-[#C9A84C] text-[11px] font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-3">
+            🌎 Evento Mundial
           </span>
           <h1 className="font-display text-5xl tracking-wide mb-2 leading-none">
-            CHAMPIONS LEAGUE
+            COPA DO MUNDO
             <br />
-            <span className="text-[#C9A84C]">QUARTAS DE FINAL</span>
+            <span className="text-[#C9A84C]">2026</span>
           </h1>
           <p className="text-[#9B9590] text-sm leading-relaxed mb-5">
-            As maiores odds do torneio. Mais de 200 mercados disponíveis por
-            jogo, incluindo placar exato, primeiro marcador e estatísticas
-            avançadas.
+            Aposte nos maiores confrontos do planeta. Mercados para vencedor,
+            artilheiro, classificação, placar exato e centenas de opções ao vivo
+            durante toda a competição.
           </p>
           <div className="flex gap-3">
             <button
               onClick={() => navigate("/sports")}
               className="bg-[#C9A84C] hover:bg-[#F0D080] text-black text-sm font-semibold px-5 py-2.5 rounded-xl transition-colors"
             >
-              Ver todos os mercados
+              Explorar mercados
             </button>
             <button
               onClick={() => navigate("/live")}
               className="bg-transparent border border-white/10 hover:border-white/25 text-[#9B9590] hover:text-[#F0EDE6] text-sm px-5 py-2.5 rounded-xl transition-colors"
             >
-              Odds ao vivo
+              Jogos ao vivo
             </button>
           </div>
         </div>
@@ -92,7 +123,7 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-        <button className="bg-purple-500/20 hover:bg-purple-500/40 text-purple-300 text-[13px] font-semibold px-4 py-2 rounded-xl transition-colors group-hover:translate-x-0.5 transition-transform">
+        <button className="bg-purple-500/20 hover:bg-purple-500/40 text-purple-300 text-[13px] font-semibold px-4 py-2 rounded-xl transition-colors">
           Jogar →
         </button>
       </div>
@@ -101,15 +132,15 @@ export default function HomePage() {
       <div className="flex items-center gap-2 overflow-x-auto pb-1">
         {SPORT_TABS.map((tab) => (
           <button
-            key={tab}
-            onClick={() => setActiveSportTab(tab)}
+            key={tab.label}
+            onClick={() => setActiveSportTab(tab.sport)}
             className={`px-4 py-1.5 rounded-full text-[13px] font-medium whitespace-nowrap transition-all ${
-              activeSportTab === tab
+              activeSportTab === tab.sport
                 ? "bg-[#C9A84C] text-black"
                 : "bg-[#111318] border border-white/[0.06] text-[#9B9590] hover:text-[#F0EDE6]"
             }`}
           >
-            {tab}
+            {tab.label}
           </button>
         ))}
       </div>
@@ -118,10 +149,10 @@ export default function HomePage() {
       <section>
         <div className="flex items-center justify-between mb-4">
           <h2 className="font-display text-2xl tracking-wide flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#C9A84C] inline-block" />
+            <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-blink inline-block" />
             Jogos Ao Vivo
             <span className="text-[13px] font-body font-normal text-[#9B9590] ml-1">
-              {liveGames.length} jogos
+              {loadingLive ? "…" : `${liveGames.length} jogos`}
             </span>
           </h2>
           <button
@@ -131,11 +162,21 @@ export default function HomePage() {
             Ver tudo →
           </button>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {liveGames.slice(0, 4).map((game) => (
-            <GameCard key={game.id} game={game} />
-          ))}
-        </div>
+        {loadingLive ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[1, 2, 3, 4].map((i) => <GameSkeleton key={i} />)}
+          </div>
+        ) : liveGames.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {liveGames.slice(0, 4).map((game) => (
+              <GameCard key={game.id} game={game} />
+            ))}
+          </div>
+        ) : (
+          <div className="bg-[#111318] border border-white/[0.06] rounded-xl px-5 py-8 text-center text-[#5A5750] text-sm">
+            Nenhum jogo ao vivo no momento
+          </div>
+        )}
       </section>
 
       {/* Upcoming Games */}
@@ -152,11 +193,17 @@ export default function HomePage() {
             Ver tudo →
           </button>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {upcomingGames.map((game) => (
-            <GameCard key={game.id} game={game} />
-          ))}
-        </div>
+        {loadingUpcoming ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[1, 2, 3].map((i) => <GameSkeleton key={i} />)}
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {upcomingGames.map((game) => (
+              <GameCard key={game.id} game={game} />
+            ))}
+          </div>
+        )}
       </section>
 
       {/* Promos strip */}
@@ -182,9 +229,7 @@ export default function HomePage() {
             >
               <div className="flex items-start justify-between mb-3">
                 <span className="text-2xl">{p.icon}</span>
-                <span
-                  className={`text-[10px] font-bold uppercase px-2 py-0.5 rounded-full ${p.badgeClass}`}
-                >
+                <span className={`text-[10px] font-bold uppercase px-2 py-0.5 rounded-full ${p.badgeClass}`}>
                   {p.badge}
                 </span>
               </div>

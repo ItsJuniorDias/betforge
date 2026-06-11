@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
+import { promotions } from "../data/mockData";
 
 // Mapeia cada promoção para a rota de destino correta
 const PROMO_ROUTES = {

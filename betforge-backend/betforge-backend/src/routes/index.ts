@@ -1,0 +1,27 @@
+import { Router, type Request, type Response } from 'express';
+import authRoutes from './auth.routes.js';
+import betRoutes from './bet.routes.js';
+import financialRoutes from './financial.routes.js';
+import userRoutes from './user.routes.js';
+import gamesRoutes from './games.routes.js';
+
+const router = Router();
+
+// Health check
+router.get('/health', (_req: Request, res: Response) => {
+  res.json({
+    success: true,
+    message: 'BetForge API está no ar! 🚀',
+    timestamp: new Date().toISOString(),
+    version: process.env.npm_package_version || '1.0.0',
+  });
+});
+
+// Rotas da API
+router.use('/auth', authRoutes);
+router.use('/bets', betRoutes);
+router.use('/financial', financialRoutes);
+router.use('/users', userRoutes);
+router.use('/games', gamesRoutes);   // ← novo: jogos, mercados e odds
+
+export default router;

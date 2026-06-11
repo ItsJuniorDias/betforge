@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useBetSlip } from "../../context/BetSlipContext";
 import { useLayout } from "../../context/LayoutContext";
+import { usePlaceBet } from "../../hooks/api/useBets";
+import { useBalance } from "../../hooks/api/useUser";
 
 const QUICK_STAKES = [10, 25, 50, 100, 200, 500];
 
@@ -20,16 +22,19 @@ export default function BetPanel() {
     count,
   } = useBetSlip();
   const { closeSlip } = useLayout();
+  const placeBet = usePlaceBet();
+  const { data: balanceData } = useBalance();
 
   const [confirmed, setConfirmed] = useState(false);
-  const [confirming, setConfirming] = useState(false);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
-  const fmt = (n) =>
+  const fmt = (n: number) =>
     n.toLocaleString("pt-BR", {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2,
     });
-  const balance = 1250.0;
+
+  const balance = balanceData?.balance ?? 0;
   const payout =
     betType === "multiple"
       ? multiplePayout
@@ -38,17 +43,41 @@ export default function BetPanel() {
         : 0;
   const profit = payout - stake;
 
-  const handleBet = () => {
-    setConfirming(true);
-    setTimeout(() => {
-      setConfirming(false);
+  const handleBet = async () => {
+    setErrorMsg(null);
+
+    // Monta o payload real para POST /api/v1/bets
+    const selections = items.map((item) => ({
+      matchId: item._realMatchId ?? item.matchId,
+      marketId: item._marketId ?? "1x2",
+      pick: item.pick,
+      label: item.pick,
+      odd: item.odd,
+      matchLabel: item.match,
+      marketLabel: item._marketLabel ?? "Resultado Final",
+    }));
+
+    try {
+      await placeBet.mutateAsync({
+        type: betType as "single" | "multiple",
+        stake,
+        selections,
+      });
       setConfirmed(true);
       setTimeout(() => {
         setConfirmed(false);
         clearSlip();
       }, 3500);
-    }, 1200);
+    } catch (err: any) {
+      const msg =
+        err?.response?.data?.message ??
+        err?.message ??
+        "Erro ao registrar aposta. Tente novamente.";
+      setErrorMsg(msg);
+    }
   };
+
+  const confirming = placeBet.isPending;
 
   /* ── Tela de confirmação ──────────────────────────────────────── */
   if (confirmed) {
@@ -297,6 +326,13 @@ export default function BetPanel() {
               <p className="text-red-400 text-[11px]">
                 Saldo insuficiente para esta aposta
               </p>
+            </div>
+          )}
+
+          {/* Erro da API */}
+          {errorMsg && (
+            <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-2.5 text-center">
+              <p className="text-red-400 text-[11px]">{errorMsg}</p>
             </div>
           )}
 

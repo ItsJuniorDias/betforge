@@ -1,34 +1,23 @@
-import { useState, useEffect } from "react";
-import { liveGames } from "../data/mockData";
+import { useState } from "react";
+import { useLiveGames } from "../hooks/api/useGames";
 import GameCard from "../components/betting/GameCard";
 
+const SPORT_FILTERS = ["all", "football", "basketball", "esports", "mma"];
+const SPORT_LABELS = {
+  all: "Todos",
+  football: "Futebol",
+  basketball: "Basquete",
+  esports: "E-Sports",
+  mma: "MMA",
+};
+
 export default function LivePage() {
-  const [games, setGames] = useState(liveGames);
   const [filter, setFilter] = useState("all");
 
-  // Simulate minute updates
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setGames((prev) =>
-        prev.map((g) =>
-          g.minute ? { ...g, minute: Math.min(90, g.minute + 1) } : g,
-        ),
-      );
-    }, 30000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const sports = ["all", "football", "basketball", "esports", "mma"];
-  const sportLabels = {
-    all: "Todos",
-    football: "Futebol",
-    basketball: "Basquete",
-    esports: "E-Sports",
-    mma: "MMA",
-  };
-
-  const filtered =
-    filter === "all" ? games : games.filter((g) => g.sport === filter);
+  // Busca ao vivo direto da API (refetch a cada 20s automaticamente)
+  const { data: games = [], isLoading, isError } = useLiveGames(
+    filter === "all" ? undefined : filter
+  );
 
   return (
     <div className="p-5 max-w-full mx-auto">
@@ -43,7 +32,7 @@ export default function LivePage() {
 
       {/* Sport filter */}
       <div className="flex gap-2 mb-6 overflow-x-auto pb-1">
-        {sports.map((s) => (
+        {SPORT_FILTERS.map((s) => (
           <button
             key={s}
             onClick={() => setFilter(s)}
@@ -53,7 +42,7 @@ export default function LivePage() {
                 : "bg-[#111318] border border-white/[0.06] text-[#9B9590] hover:text-[#F0EDE6]"
             }`}
           >
-            {sportLabels[s]}
+            {SPORT_LABELS[s]}
           </button>
         ))}
       </div>
@@ -67,20 +56,42 @@ export default function LivePage() {
         </p>
       </div>
 
-      {/* Games grid */}
-      {filtered.length > 0 ? (
+      {/* Loading */}
+      {isLoading && (
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {filtered.map((game) => (
-            <GameCard key={game.id} game={game} />
+          {[1, 2, 3, 4].map((i) => (
+            <div
+              key={i}
+              className="bg-[#111318] border border-white/[0.06] rounded-xl h-36 animate-pulse"
+            />
           ))}
         </div>
-      ) : (
+      )}
+
+      {/* Error */}
+      {isError && (
         <div className="text-center py-20">
-          <div className="text-5xl mb-4 opacity-20">🔴</div>
-          <p className="text-[#5A5750]">
-            Nenhum jogo ao vivo neste esporte no momento
-          </p>
+          <div className="text-5xl mb-4 opacity-20">⚠️</div>
+          <p className="text-[#5A5750]">Erro ao carregar jogos ao vivo</p>
         </div>
+      )}
+
+      {/* Games grid */}
+      {!isLoading && !isError && (
+        games.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {games.map((game) => (
+              <GameCard key={game.id} game={game} />
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-20">
+            <div className="text-5xl mb-4 opacity-20">🔴</div>
+            <p className="text-[#5A5750]">
+              Nenhum jogo ao vivo neste esporte no momento
+            </p>
+          </div>
+        )
       )}
     </div>
   );
