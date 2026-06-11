@@ -1,4 +1,4 @@
-import { db } from '../config/database.js';
+import { db } from '../../config/database.js';
 import { up } from './migrations/001_initial_schema.js';
 
 async function migrate() {

@@ -1,7 +1,12 @@
-import { db } from '../config/database.js';
-import type { User, UserPublic, PaginationParams, PaginationResult } from '../types/index.js';
+import { db } from "../config/database.js";
+import type {
+  User,
+  UserPublic,
+  PaginationParams,
+  PaginationResult,
+} from "../types/index.js";
 
-const TABLE = 'users';
+const TABLE = "users";
 
 function toPublic(user: User): UserPublic {
   const { password_hash, cpf, ...pub } = user;
@@ -21,10 +26,12 @@ export const UserRepository = {
     return db<User>(TABLE).where({ cpf }).first();
   },
 
-  async create(data: Omit<User, 'id' | 'created_at' | 'updated_at'>): Promise<User> {
+  async create(
+    data: Omit<User, "id" | "created_at" | "updated_at">,
+  ): Promise<User> {
     const [user] = await db<User>(TABLE)
       .insert({ ...data })
-      .returning('*');
+      .returning("*");
     return user;
   },
 
@@ -32,33 +39,36 @@ export const UserRepository = {
     const [user] = await db<User>(TABLE)
       .where({ id })
       .update({ ...data, updated_at: new Date() })
-      .returning('*');
+      .returning("*");
     return user;
   },
 
   async updateBalance(id: string, amount: number, trx?: any): Promise<User> {
-    const query = (trx || db)<User>(TABLE)
+    const conn = (trx || db) as typeof db;
+    const query = conn<User>(TABLE)
       .where({ id })
       .update({
-        balance: db.raw('balance + ?', [amount]),
+        balance: db.raw("balance + ?", [amount]),
         updated_at: new Date(),
       })
-      .returning('*');
+      .returning("*");
 
     const [user] = await query;
     return user;
   },
 
-  async findAll(params: PaginationParams): Promise<PaginationResult<UserPublic>> {
+  async findAll(
+    params: PaginationParams,
+  ): Promise<PaginationResult<UserPublic>> {
     const { page, limit } = params;
     const offset = (page - 1) * limit;
 
-    const [{ count }] = await db(TABLE).count('id as count');
+    const [{ count }] = await db(TABLE).count("id as count");
     const users = await db<User>(TABLE)
       .select()
       .limit(limit)
       .offset(offset)
-      .orderBy('created_at', 'desc');
+      .orderBy("created_at", "desc");
 
     return {
       data: users.map(toPublic),

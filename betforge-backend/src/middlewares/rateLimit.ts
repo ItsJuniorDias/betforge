@@ -1,5 +1,5 @@
-import rateLimit from 'express-rate-limit';
-import { env } from '../config/env.js';
+import { rateLimit } from "express-rate-limit";
+import { env } from "../config/env.js";
 
 export const globalRateLimit = rateLimit({
   windowMs: env.RATE_LIMIT_WINDOW_MS,
@@ -8,8 +8,8 @@ export const globalRateLimit = rateLimit({
   legacyHeaders: false,
   message: {
     success: false,
-    message: 'Muitas requisições. Tente novamente em alguns minutos.',
-    code: 'RATE_LIMIT_EXCEEDED',
+    message: "Muitas requisições. Tente novamente em alguns minutos.",
+    code: "RATE_LIMIT_EXCEEDED",
   },
 });
 
@@ -20,8 +20,8 @@ export const authRateLimit = rateLimit({
   legacyHeaders: false,
   message: {
     success: false,
-    message: 'Muitas tentativas de login. Tente novamente em 15 minutos.',
-    code: 'AUTH_RATE_LIMIT_EXCEEDED',
+    message: "Muitas tentativas de login. Tente novamente em 15 minutos.",
+    code: "AUTH_RATE_LIMIT_EXCEEDED",
   },
 });
 
@@ -32,7 +32,7 @@ export const betRateLimit = rateLimit({
   legacyHeaders: false,
   message: {
     success: false,
-    message: 'Muitas apostas por minuto. Aguarde antes de continuar.',
-    code: 'BET_RATE_LIMIT_EXCEEDED',
+    message: "Muitas apostas por minuto. Aguarde antes de continuar.",
+    code: "BET_RATE_LIMIT_EXCEEDED",
   },
 });
