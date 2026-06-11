@@ -1,0 +1,378 @@
+{"level":"info","message":"🚀 Iniciando BetForge API...","timestamp":"2026-06-11T17:48:49.694Z"}
+{"level":"info","message":"✅ Banco de dados conectado com sucesso","timestamp":"2026-06-11T17:48:49.761Z"}
+{"level":"info","message":"✅ Redis conectado com sucesso","timestamp":"2026-06-11T17:48:49.763Z"}
+{"level":"info","message":"✅ Servidor rodando em http://localhost:3333","timestamp":"2026-06-11T17:48:49.768Z"}
+{"level":"info","message":"📡 API disponível em http://localhost:3333/api/v1","timestamp":"2026-06-11T17:48:49.768Z"}
+{"level":"info","message":"🌎 Ambiente: development","timestamp":"2026-06-11T17:48:49.769Z"}
+{"level":"info","message":"⚡ Recebido SIGINT. Encerrando graciosamente...","timestamp":"2026-06-11T17:48:53.950Z"}
+{"level":"info","message":"🚀 Iniciando BetForge API...","timestamp":"2026-06-11T18:12:06.587Z"}
+{"level":"info","message":"✅ Banco de dados conectado com sucesso","timestamp":"2026-06-11T18:12:06.672Z"}
+{"level":"info","message":"✅ Redis conectado com sucesso","timestamp":"2026-06-11T18:12:06.674Z"}
+{"level":"info","message":"✅ Servidor rodando em http://localhost:3333","timestamp":"2026-06-11T18:12:06.680Z"}
+{"level":"info","message":"📡 API disponível em http://localhost:3333/api/v1","timestamp":"2026-06-11T18:12:06.680Z"}
+{"level":"info","message":"🌎 Ambiente: development","timestamp":"2026-06-11T18:12:06.680Z"}
+{"level":"info","message":"⚡ Recebido SIGINT. Encerrando graciosamente...","timestamp":"2026-06-11T18:55:00.193Z"}
+{"level":"info","message":"🚀 Iniciando BetForge API...","timestamp":"2026-06-11T19:30:10.300Z"}
+{"level":"info","message":"✅ Banco de dados conectado com sucesso","timestamp":"2026-06-11T19:30:10.403Z"}
+{"level":"info","message":"✅ Redis conectado com sucesso","timestamp":"2026-06-11T19:30:10.404Z"}
+{"level":"info","message":"✅ Servidor rodando em http://localhost:3333","timestamp":"2026-06-11T19:30:10.414Z"}
+{"level":"info","message":"📡 API disponível em http://localhost:3333/api/v1","timestamp":"2026-06-11T19:30:10.414Z"}
+{"level":"info","message":"🌎 Ambiente: development","timestamp":"2026-06-11T19:30:10.414Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:32:05 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 200 1119 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:32:05.578Z"}
+{"level":"debug","message":"[OddsSync] sync já em andamento, aguardando...","timestamp":"2026-06-11T19:32:05.808Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:32:05 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:32:05.809Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 330 (usados: 170)","timestamp":"2026-06-11T19:32:06.602Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 330 (usados: 170)","timestamp":"2026-06-11T19:32:06.605Z"}
+{"level":"info","message":"[OddsSync] soccer_brazil_campeonato: 0 jogos sincronizados","timestamp":"2026-06-11T19:32:06.606Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 330 (usados: 170)","timestamp":"2026-06-11T19:32:06.829Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 330 (usados: 170)","timestamp":"2026-06-11T19:32:07.032Z"}
+{"level":"info","message":"[OddsSync] soccer_uefa_champs_league: 0 jogos sincronizados","timestamp":"2026-06-11T19:32:07.033Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 330 (usados: 170)","timestamp":"2026-06-11T19:32:07.419Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 330 (usados: 170)","timestamp":"2026-06-11T19:32:07.431Z"}
+{"level":"info","message":"[OddsSync] soccer_epl: 0 jogos sincronizados","timestamp":"2026-06-11T19:32:07.432Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 330 (usados: 170)","timestamp":"2026-06-11T19:32:07.923Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 330 (usados: 170)","timestamp":"2026-06-11T19:32:07.925Z"}
+{"level":"info","message":"[OddsSync] soccer_spain_la_liga: 0 jogos sincronizados","timestamp":"2026-06-11T19:32:07.926Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 330 (usados: 170)","timestamp":"2026-06-11T19:32:08.326Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 330 (usados: 170)","timestamp":"2026-06-11T19:32:08.328Z"}
+{"level":"info","message":"[OddsSync] soccer_italy_serie_a: 0 jogos sincronizados","timestamp":"2026-06-11T19:32:08.330Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 330 (usados: 170)","timestamp":"2026-06-11T19:32:08.728Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 330 (usados: 170)","timestamp":"2026-06-11T19:32:08.730Z"}
+{"level":"info","message":"[OddsSync] soccer_germany_bundesliga: 0 jogos sincronizados","timestamp":"2026-06-11T19:32:08.731Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 326 (usados: 174)","timestamp":"2026-06-11T19:32:09.129Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 328 (usados: 172)","timestamp":"2026-06-11T19:32:09.131Z"}
+{"level":"info","message":"[OddsSync] soccer_conmebol_copa_libertadores: 9 jogos sincronizados","timestamp":"2026-06-11T19:32:09.307Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 324 (usados: 176)","timestamp":"2026-06-11T19:32:09.685Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 322 (usados: 178)","timestamp":"2026-06-11T19:32:09.720Z"}
+{"level":"info","message":"[OddsSync] basketball_nba: 1 jogos sincronizados","timestamp":"2026-06-11T19:32:09.732Z"}
+{"level":"info","message":"[OddsSync] sync concluído em 4041ms — 10 eventos","timestamp":"2026-06-11T19:32:09.732Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:32:09 +0000] \"GET /api/v1/games/live HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:32:09.738Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:32:09 +0000] \"GET /api/v1/games?status=scheduled&limit=6 HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:32:09.899Z"}
+{"body":{"cause":[{"code":4020,"data":"11-06-2026T19:32:24UTC;1e9d598f-d7e3-4c86-b81d-0d82c7af213d","description":"notificaction_url attribute must be url valid"}],"error":"bad_request","message":"notificaction_url attribute must be url valid","status":400},"level":"error","message":"Mercado Pago API error","path":"/v1/payments","status":400,"timestamp":"2026-06-11T19:32:23.079Z"}
+{"err":{"code":"MP_ERROR","isOperational":true,"statusCode":502},"level":"error","message":"Erro ao criar payment Mercado Pago","timestamp":"2026-06-11T19:32:23.089Z","transactionId":"4388d57e-9432-4b40-b850-37f19c507550"}
+{"code":"MP_ERROR","level":"warn","message":"Operational error Mercado Pago: notificaction_url attribute must be url valid","method":"POST","path":"/api/v1/financial/deposit","statusCode":502,"timestamp":"2026-06-11T19:32:23.090Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:32:23 +0000] \"POST /api/v1/financial/deposit HTTP/1.1\" 502 107 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:32:23.091Z"}
+{"body":{"cause":[{"code":4020,"data":"11-06-2026T19:32:41UTC;7bfdc17e-b714-4a79-b51e-be9ad3642a24","description":"notificaction_url attribute must be url valid"}],"error":"bad_request","message":"notificaction_url attribute must be url valid","status":400},"level":"error","message":"Mercado Pago API error","path":"/v1/payments","status":400,"timestamp":"2026-06-11T19:32:40.129Z"}
+{"err":{"code":"MP_ERROR","isOperational":true,"statusCode":502},"level":"error","message":"Erro ao criar payment Mercado Pago","timestamp":"2026-06-11T19:32:40.135Z","transactionId":"e68fabd7-3ab3-43c6-9ed7-7878b9d15a54"}
+{"code":"MP_ERROR","level":"warn","message":"Operational error Mercado Pago: notificaction_url attribute must be url valid","method":"POST","path":"/api/v1/financial/deposit","statusCode":502,"timestamp":"2026-06-11T19:32:40.136Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:32:40 +0000] \"POST /api/v1/financial/deposit HTTP/1.1\" 502 107 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:32:40.137Z"}
+{"level":"info","message":"⚡ Recebido SIGINT. Encerrando graciosamente...","timestamp":"2026-06-11T19:34:36.744Z"}
+{"level":"info","message":"🚀 Iniciando BetForge API...","timestamp":"2026-06-11T19:34:40.089Z"}
+{"level":"info","message":"✅ Banco de dados conectado com sucesso","timestamp":"2026-06-11T19:34:40.250Z"}
+{"level":"info","message":"✅ Redis conectado com sucesso","timestamp":"2026-06-11T19:34:40.251Z"}
+{"level":"info","message":"✅ Servidor rodando em http://localhost:3333","timestamp":"2026-06-11T19:34:40.264Z"}
+{"level":"info","message":"📡 API disponível em http://localhost:3333/api/v1","timestamp":"2026-06-11T19:34:40.265Z"}
+{"level":"info","message":"🌎 Ambiente: development","timestamp":"2026-06-11T19:34:40.265Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:34:43 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:34:43.439Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:34:43 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:34:43.442Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:34:43 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 200 510 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:34:43.592Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:34:43 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:34:43.615Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:34:43 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:34:43.738Z"}
+{"body":{"cause":[{"code":7,"data":"11-06-2026T19:34:52UTC;6f783029-9d8a-4b6a-b7ac-4a24603889dd","description":"Unauthorized use of live credentials"}],"error":"unauthorized","message":"Unauthorized use of live credentials","status":401},"level":"error","message":"Mercado Pago API error","path":"/v1/payments","status":401,"timestamp":"2026-06-11T19:34:50.705Z"}
+{"err":{"code":"MP_ERROR","isOperational":true,"statusCode":502},"level":"error","message":"Erro ao criar payment Mercado Pago","timestamp":"2026-06-11T19:34:50.712Z","transactionId":"8f3c678f-c4bb-4c7a-bd58-c7cbc8eef978"}
+{"code":"MP_ERROR","level":"warn","message":"Operational error Mercado Pago: Unauthorized use of live credentials","method":"POST","path":"/api/v1/financial/deposit","statusCode":502,"timestamp":"2026-06-11T19:34:50.713Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:34:50 +0000] \"POST /api/v1/financial/deposit HTTP/1.1\" 502 98 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:34:50.713Z"}
+{"level":"info","message":"⚡ Recebido SIGINT. Encerrando graciosamente...","timestamp":"2026-06-11T19:36:36.597Z"}
+{"level":"info","message":"🚀 Iniciando BetForge API...","timestamp":"2026-06-11T19:37:16.367Z"}
+{"level":"info","message":"✅ Banco de dados conectado com sucesso","timestamp":"2026-06-11T19:37:16.410Z"}
+{"level":"info","message":"✅ Redis conectado com sucesso","timestamp":"2026-06-11T19:37:16.413Z"}
+{"level":"info","message":"✅ Servidor rodando em http://localhost:3333","timestamp":"2026-06-11T19:37:16.419Z"}
+{"level":"info","message":"📡 API disponível em http://localhost:3333/api/v1","timestamp":"2026-06-11T19:37:16.420Z"}
+{"level":"info","message":"🌎 Ambiente: development","timestamp":"2026-06-11T19:37:16.421Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:37:22 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:37:22.533Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:37:22 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:37:22.539Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:37:22 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:37:22.630Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:37:22 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:37:22.642Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:37:22 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:37:22.826Z"}
+{"body":{"cause":[{"code":7,"data":"11-06-2026T19:37:29UTC;9232083c-c7c0-4cac-bf03-cb0629ecf1d1","description":"Unauthorized use of live credentials"}],"error":"unauthorized","message":"Unauthorized use of live credentials","status":401},"level":"error","message":"Mercado Pago API error","path":"/v1/payments","status":401,"timestamp":"2026-06-11T19:37:27.918Z"}
+{"err":{"code":"MP_ERROR","isOperational":true,"statusCode":502},"level":"error","message":"Erro ao criar payment Mercado Pago","timestamp":"2026-06-11T19:37:27.929Z","transactionId":"7a2da3bb-2136-4a33-8b38-00aadc7221c8"}
+{"code":"MP_ERROR","level":"warn","message":"Operational error Mercado Pago: Unauthorized use of live credentials","method":"POST","path":"/api/v1/financial/deposit","statusCode":502,"timestamp":"2026-06-11T19:37:27.930Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:37:27 +0000] \"POST /api/v1/financial/deposit HTTP/1.1\" 502 98 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:37:27.933Z"}
+{"level":"info","message":"⚡ Recebido SIGINT. Encerrando graciosamente...","timestamp":"2026-06-11T19:49:05.062Z"}
+{"level":"info","message":"🚀 Iniciando BetForge API...","timestamp":"2026-06-11T19:49:09.797Z"}
+{"level":"info","message":"✅ Banco de dados conectado com sucesso","timestamp":"2026-06-11T19:49:09.852Z"}
+{"level":"info","message":"✅ Redis conectado com sucesso","timestamp":"2026-06-11T19:49:09.855Z"}
+{"level":"info","message":"✅ Servidor rodando em http://localhost:3333","timestamp":"2026-06-11T19:49:09.863Z"}
+{"level":"info","message":"📡 API disponível em http://localhost:3333/api/v1","timestamp":"2026-06-11T19:49:09.864Z"}
+{"level":"info","message":"🌎 Ambiente: development","timestamp":"2026-06-11T19:49:09.864Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:49:14 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:49:14.065Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:49:14 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:49:14.070Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:49:14 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:49:14.219Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:49:14 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:49:14.225Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:49:14 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:49:14.386Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:49:20 +0000] \"POST /api/v1/financial/deposit HTTP/1.1\" 200 4413 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:49:20.486Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:49:20 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:49:20.500Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:50:20 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:50:20.660Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:51:56 +0000] \"DELETE /api/v1/financial/deposit/d829c70d-57e0-427d-a626-e1b43cc86b9d HTTP/1.1\" 200 115 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:51:56.294Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:52:12 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:52:12.943Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:52:12 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:52:12.949Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:52:13 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:52:13.005Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:52:13 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:52:13.011Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:52:13 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:52:13.035Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:52:27 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:52:27.441Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:52:27 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:52:27.443Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:52:27 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:52:27.460Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:52:27 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:52:27.470Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:52:27 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:52:27.557Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:53:27 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:53:27.586Z"}
+{"level":"debug","message":"[OddsSync] sync já em andamento, aguardando...","timestamp":"2026-06-11T19:53:27.880Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 322 (usados: 178)","timestamp":"2026-06-11T19:53:28.458Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 322 (usados: 178)","timestamp":"2026-06-11T19:53:28.486Z"}
+{"level":"info","message":"[OddsSync] soccer_brazil_campeonato: 0 jogos sincronizados","timestamp":"2026-06-11T19:53:28.487Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 322 (usados: 178)","timestamp":"2026-06-11T19:53:28.877Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 322 (usados: 178)","timestamp":"2026-06-11T19:53:28.896Z"}
+{"level":"info","message":"[OddsSync] soccer_uefa_champs_league: 0 jogos sincronizados","timestamp":"2026-06-11T19:53:28.898Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 322 (usados: 178)","timestamp":"2026-06-11T19:53:29.066Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 322 (usados: 178)","timestamp":"2026-06-11T19:53:29.292Z"}
+{"level":"info","message":"[OddsSync] soccer_epl: 0 jogos sincronizados","timestamp":"2026-06-11T19:53:29.295Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:53:29 +0000] \"GET /api/v1/games?status=scheduled&limit=6 HTTP/1.1\" - - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:53:29.643Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:53:29 +0000] \"GET /api/v1/games/live HTTP/1.1\" - - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:53:29.644Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 322 (usados: 178)","timestamp":"2026-06-11T19:53:29.688Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 322 (usados: 178)","timestamp":"2026-06-11T19:53:29.698Z"}
+{"level":"info","message":"[OddsSync] soccer_spain_la_liga: 0 jogos sincronizados","timestamp":"2026-06-11T19:53:29.700Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:53:29 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:53:29.943Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:53:29 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:53:29.948Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:53:29 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:53:29.954Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:53:29 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:53:29.957Z"}
+{"level":"debug","message":"[OddsSync] sync já em andamento, aguardando...","timestamp":"2026-06-11T19:53:30.026Z"}
+{"level":"debug","message":"[OddsSync] sync já em andamento, aguardando...","timestamp":"2026-06-11T19:53:30.026Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:53:30 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:53:30.036Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 322 (usados: 178)","timestamp":"2026-06-11T19:53:30.085Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 322 (usados: 178)","timestamp":"2026-06-11T19:53:30.087Z"}
+{"level":"info","message":"[OddsSync] soccer_italy_serie_a: 0 jogos sincronizados","timestamp":"2026-06-11T19:53:30.088Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 322 (usados: 178)","timestamp":"2026-06-11T19:53:30.468Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 322 (usados: 178)","timestamp":"2026-06-11T19:53:30.481Z"}
+{"level":"info","message":"[OddsSync] soccer_germany_bundesliga: 0 jogos sincronizados","timestamp":"2026-06-11T19:53:30.482Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 318 (usados: 182)","timestamp":"2026-06-11T19:53:30.915Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 320 (usados: 180)","timestamp":"2026-06-11T19:53:30.917Z"}
+{"level":"info","message":"[OddsSync] soccer_conmebol_copa_libertadores: 9 jogos sincronizados","timestamp":"2026-06-11T19:53:31.067Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 316 (usados: 184)","timestamp":"2026-06-11T19:53:31.492Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 314 (usados: 186)","timestamp":"2026-06-11T19:53:31.493Z"}
+{"level":"info","message":"[OddsSync] basketball_nba: 1 jogos sincronizados","timestamp":"2026-06-11T19:53:31.512Z"}
+{"level":"info","message":"[OddsSync] sync concluído em 3651ms — 10 eventos","timestamp":"2026-06-11T19:53:31.512Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:53:31 +0000] \"GET /api/v1/games/live HTTP/1.1\" 200 46 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:53:31.643Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:53:31 +0000] \"GET /api/v1/games?status=scheduled&limit=6 HTTP/1.1\" 200 2830 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:53:31.748Z"}
+{"level":"debug","message":"[OddsSync] cache válido, pulando sync","timestamp":"2026-06-11T19:53:51.667Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:53:51 +0000] \"GET /api/v1/games/live HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:53:51.681Z"}
+{"level":"debug","message":"[OddsSync] cache válido, pulando sync","timestamp":"2026-06-11T19:54:01.767Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:19:54:01 +0000] \"GET /api/v1/games?status=scheduled&limit=6 HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T19:54:01.809Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:04:22 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:04:22.321Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:04:22 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:04:22.324Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:04:22 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:04:22.381Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:04:22 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:04:22.384Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:04:23 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:04:23.094Z"}
+{"level":"debug","message":"[OddsSync] sync já em andamento, aguardando...","timestamp":"2026-06-11T20:04:23.100Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 314 (usados: 186)","timestamp":"2026-06-11T20:04:23.323Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 314 (usados: 186)","timestamp":"2026-06-11T20:04:23.327Z"}
+{"level":"info","message":"[OddsSync] soccer_brazil_campeonato: 0 jogos sincronizados","timestamp":"2026-06-11T20:04:23.329Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 314 (usados: 186)","timestamp":"2026-06-11T20:04:23.513Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 314 (usados: 186)","timestamp":"2026-06-11T20:04:23.537Z"}
+{"level":"info","message":"[OddsSync] soccer_uefa_champs_league: 0 jogos sincronizados","timestamp":"2026-06-11T20:04:23.540Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 314 (usados: 186)","timestamp":"2026-06-11T20:04:23.717Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 314 (usados: 186)","timestamp":"2026-06-11T20:04:23.933Z"}
+{"level":"info","message":"[OddsSync] soccer_epl: 0 jogos sincronizados","timestamp":"2026-06-11T20:04:23.934Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 314 (usados: 186)","timestamp":"2026-06-11T20:04:24.103Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 314 (usados: 186)","timestamp":"2026-06-11T20:04:24.324Z"}
+{"level":"info","message":"[OddsSync] soccer_spain_la_liga: 0 jogos sincronizados","timestamp":"2026-06-11T20:04:24.325Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 314 (usados: 186)","timestamp":"2026-06-11T20:04:24.479Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 314 (usados: 186)","timestamp":"2026-06-11T20:04:24.483Z"}
+{"level":"info","message":"[OddsSync] soccer_italy_serie_a: 0 jogos sincronizados","timestamp":"2026-06-11T20:04:24.483Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 314 (usados: 186)","timestamp":"2026-06-11T20:04:24.950Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 314 (usados: 186)","timestamp":"2026-06-11T20:04:24.951Z"}
+{"level":"info","message":"[OddsSync] soccer_germany_bundesliga: 0 jogos sincronizados","timestamp":"2026-06-11T20:04:24.952Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 312 (usados: 188)","timestamp":"2026-06-11T20:04:25.345Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 310 (usados: 190)","timestamp":"2026-06-11T20:04:25.404Z"}
+{"level":"info","message":"[OddsSync] soccer_conmebol_copa_libertadores: 9 jogos sincronizados","timestamp":"2026-06-11T20:04:25.512Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 308 (usados: 192)","timestamp":"2026-06-11T20:04:25.673Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 306 (usados: 194)","timestamp":"2026-06-11T20:04:25.903Z"}
+{"level":"info","message":"[OddsSync] basketball_nba: 1 jogos sincronizados","timestamp":"2026-06-11T20:04:25.924Z"}
+{"level":"info","message":"[OddsSync] sync concluído em 2856ms — 10 eventos","timestamp":"2026-06-11T20:04:25.924Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:04:25 +0000] \"GET /api/v1/games/live HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:04:25.930Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:04:26 +0000] \"GET /api/v1/games?status=scheduled&limit=6 HTTP/1.1\" 200 2827 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:04:26.158Z"}
+{"level":"debug","message":"[OddsSync] sync já em andamento, aguardando...","timestamp":"2026-06-11T20:30:54.785Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:30:54 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:30:54.842Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 306 (usados: 194)","timestamp":"2026-06-11T20:30:56.039Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 306 (usados: 194)","timestamp":"2026-06-11T20:30:56.250Z"}
+{"level":"info","message":"[OddsSync] soccer_brazil_campeonato: 0 jogos sincronizados","timestamp":"2026-06-11T20:30:56.250Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 306 (usados: 194)","timestamp":"2026-06-11T20:30:56.453Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 306 (usados: 194)","timestamp":"2026-06-11T20:30:56.640Z"}
+{"level":"info","message":"[OddsSync] soccer_uefa_champs_league: 0 jogos sincronizados","timestamp":"2026-06-11T20:30:56.641Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 306 (usados: 194)","timestamp":"2026-06-11T20:30:56.826Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 306 (usados: 194)","timestamp":"2026-06-11T20:30:57.013Z"}
+{"level":"info","message":"[OddsSync] soccer_epl: 0 jogos sincronizados","timestamp":"2026-06-11T20:30:57.015Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 306 (usados: 194)","timestamp":"2026-06-11T20:30:57.171Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 306 (usados: 194)","timestamp":"2026-06-11T20:30:57.182Z"}
+{"level":"info","message":"[OddsSync] soccer_spain_la_liga: 0 jogos sincronizados","timestamp":"2026-06-11T20:30:57.184Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 306 (usados: 194)","timestamp":"2026-06-11T20:30:57.359Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 306 (usados: 194)","timestamp":"2026-06-11T20:30:57.573Z"}
+{"level":"info","message":"[OddsSync] soccer_italy_serie_a: 0 jogos sincronizados","timestamp":"2026-06-11T20:30:57.574Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 306 (usados: 194)","timestamp":"2026-06-11T20:30:57.744Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 306 (usados: 194)","timestamp":"2026-06-11T20:30:57.978Z"}
+{"level":"info","message":"[OddsSync] soccer_germany_bundesliga: 0 jogos sincronizados","timestamp":"2026-06-11T20:30:57.979Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 304 (usados: 196)","timestamp":"2026-06-11T20:30:58.137Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 302 (usados: 198)","timestamp":"2026-06-11T20:30:58.361Z"}
+{"level":"info","message":"[OddsSync] soccer_conmebol_copa_libertadores: 9 jogos sincronizados","timestamp":"2026-06-11T20:30:58.523Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 300 (usados: 200)","timestamp":"2026-06-11T20:30:58.696Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 298 (usados: 202)","timestamp":"2026-06-11T20:30:58.915Z"}
+{"level":"info","message":"[OddsSync] basketball_nba: 1 jogos sincronizados","timestamp":"2026-06-11T20:30:58.937Z"}
+{"level":"info","message":"[OddsSync] sync concluído em 4279ms — 10 eventos","timestamp":"2026-06-11T20:30:58.937Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:30:58 +0000] \"GET /api/v1/games/live HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:30:58.943Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:30:59 +0000] \"GET /api/v1/games?status=scheduled&limit=6 HTTP/1.1\" 200 2831 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:30:59.042Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:31:01 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:31:01.175Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:31:01 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:31:01.177Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:31:01 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:31:01.187Z"}
+{"level":"debug","message":"[OddsSync] cache válido, pulando sync","timestamp":"2026-06-11T20:31:01.272Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:31:01 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:31:01.274Z"}
+{"level":"debug","message":"[OddsSync] cache válido, pulando sync","timestamp":"2026-06-11T20:31:01.275Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:31:01 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:31:01.279Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:31:01 +0000] \"GET /api/v1/games/live HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:31:01.287Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:31:01 +0000] \"GET /api/v1/games?status=scheduled&limit=6 HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:31:01.374Z"}
+{"level":"debug","message":"[OddsSync] cache válido, pulando sync","timestamp":"2026-06-11T20:31:21.310Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:31:21 +0000] \"GET /api/v1/games/live HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:31:21.319Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:50:09 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:50:09.198Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:50:09 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:50:09.200Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:50:09 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:50:09.274Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:50:09 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:50:09.279Z"}
+{"level":"debug","message":"[OddsSync] sync já em andamento, aguardando...","timestamp":"2026-06-11T20:50:09.545Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:50:09 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:50:09.548Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 298 (usados: 202)","timestamp":"2026-06-11T20:50:10.127Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 298 (usados: 202)","timestamp":"2026-06-11T20:50:10.323Z"}
+{"level":"info","message":"[OddsSync] soccer_brazil_campeonato: 0 jogos sincronizados","timestamp":"2026-06-11T20:50:10.324Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 298 (usados: 202)","timestamp":"2026-06-11T20:50:10.488Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 298 (usados: 202)","timestamp":"2026-06-11T20:50:10.777Z"}
+{"level":"info","message":"[OddsSync] soccer_uefa_champs_league: 0 jogos sincronizados","timestamp":"2026-06-11T20:50:10.780Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 298 (usados: 202)","timestamp":"2026-06-11T20:50:11.163Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 298 (usados: 202)","timestamp":"2026-06-11T20:50:11.166Z"}
+{"level":"info","message":"[OddsSync] soccer_epl: 0 jogos sincronizados","timestamp":"2026-06-11T20:50:11.167Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 298 (usados: 202)","timestamp":"2026-06-11T20:50:11.552Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 298 (usados: 202)","timestamp":"2026-06-11T20:50:11.554Z"}
+{"level":"info","message":"[OddsSync] soccer_spain_la_liga: 0 jogos sincronizados","timestamp":"2026-06-11T20:50:11.554Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 298 (usados: 202)","timestamp":"2026-06-11T20:50:11.735Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 298 (usados: 202)","timestamp":"2026-06-11T20:50:11.772Z"}
+{"level":"info","message":"[OddsSync] soccer_italy_serie_a: 0 jogos sincronizados","timestamp":"2026-06-11T20:50:11.773Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 298 (usados: 202)","timestamp":"2026-06-11T20:50:11.949Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 298 (usados: 202)","timestamp":"2026-06-11T20:50:12.156Z"}
+{"level":"info","message":"[OddsSync] soccer_germany_bundesliga: 0 jogos sincronizados","timestamp":"2026-06-11T20:50:12.157Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 296 (usados: 204)","timestamp":"2026-06-11T20:50:12.542Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 294 (usados: 206)","timestamp":"2026-06-11T20:50:12.557Z"}
+{"level":"info","message":"[OddsSync] soccer_conmebol_copa_libertadores: 9 jogos sincronizados","timestamp":"2026-06-11T20:50:12.725Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 292 (usados: 208)","timestamp":"2026-06-11T20:50:13.099Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 290 (usados: 210)","timestamp":"2026-06-11T20:50:13.101Z"}
+{"level":"info","message":"[OddsSync] basketball_nba: 1 jogos sincronizados","timestamp":"2026-06-11T20:50:13.117Z"}
+{"level":"info","message":"[OddsSync] sync concluído em 3605ms — 10 eventos","timestamp":"2026-06-11T20:50:13.118Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:50:13 +0000] \"GET /api/v1/games/live HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:50:13.208Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:20:50:13 +0000] \"GET /api/v1/games?status=scheduled&limit=6 HTTP/1.1\" 200 2831 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T20:50:13.223Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 290 (usados: 210)","timestamp":"2026-06-11T21:24:23.357Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 290 (usados: 210)","timestamp":"2026-06-11T21:24:23.360Z"}
+{"level":"info","message":"[OddsSync] soccer_brazil_campeonato: 0 jogos sincronizados","timestamp":"2026-06-11T21:24:23.360Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 290 (usados: 210)","timestamp":"2026-06-11T21:24:23.585Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 290 (usados: 210)","timestamp":"2026-06-11T21:24:23.805Z"}
+{"level":"info","message":"[OddsSync] soccer_uefa_champs_league: 0 jogos sincronizados","timestamp":"2026-06-11T21:24:23.806Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 290 (usados: 210)","timestamp":"2026-06-11T21:24:23.969Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 290 (usados: 210)","timestamp":"2026-06-11T21:24:24.191Z"}
+{"level":"info","message":"[OddsSync] soccer_epl: 0 jogos sincronizados","timestamp":"2026-06-11T21:24:24.192Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 290 (usados: 210)","timestamp":"2026-06-11T21:24:24.572Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 290 (usados: 210)","timestamp":"2026-06-11T21:24:24.584Z"}
+{"level":"info","message":"[OddsSync] soccer_spain_la_liga: 0 jogos sincronizados","timestamp":"2026-06-11T21:24:24.585Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 290 (usados: 210)","timestamp":"2026-06-11T21:24:24.970Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 290 (usados: 210)","timestamp":"2026-06-11T21:24:24.979Z"}
+{"level":"info","message":"[OddsSync] soccer_italy_serie_a: 0 jogos sincronizados","timestamp":"2026-06-11T21:24:24.980Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 290 (usados: 210)","timestamp":"2026-06-11T21:24:25.150Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 290 (usados: 210)","timestamp":"2026-06-11T21:24:25.377Z"}
+{"level":"info","message":"[OddsSync] soccer_germany_bundesliga: 0 jogos sincronizados","timestamp":"2026-06-11T21:24:25.377Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 286 (usados: 214)","timestamp":"2026-06-11T21:24:25.774Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 288 (usados: 212)","timestamp":"2026-06-11T21:24:25.779Z"}
+{"level":"info","message":"[OddsSync] soccer_conmebol_copa_libertadores: 9 jogos sincronizados","timestamp":"2026-06-11T21:24:25.943Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 284 (usados: 216)","timestamp":"2026-06-11T21:24:26.334Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 282 (usados: 218)","timestamp":"2026-06-11T21:24:26.335Z"}
+{"level":"info","message":"[OddsSync] basketball_nba: 1 jogos sincronizados","timestamp":"2026-06-11T21:24:26.352Z"}
+{"level":"info","message":"[OddsSync] sync concluído em 3321ms — 10 eventos","timestamp":"2026-06-11T21:24:26.352Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:24:26 +0000] \"GET /api/v1/games/live HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:24:26.360Z"}
+{"level":"debug","message":"[OddsSync] cache válido, pulando sync","timestamp":"2026-06-11T21:24:32.991Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:24:33 +0000] \"GET /api/v1/games?status=scheduled&limit=6 HTTP/1.1\" 200 2836 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:24:33.054Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:24:59 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:24:59.313Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:25:39 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:25:39.237Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:25:39 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:25:39.244Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:25:39 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:25:39.392Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:25:39 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:25:39.396Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:25:39 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:25:39.479Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:27:39 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:27:39.601Z"}
+{"level":"info","message":"⚡ Recebido SIGINT. Encerrando graciosamente...","timestamp":"2026-06-11T21:28:27.212Z"}
+{"level":"info","message":"🚀 Iniciando BetForge API...","timestamp":"2026-06-11T21:28:30.745Z"}
+{"level":"info","message":"✅ Banco de dados conectado com sucesso","timestamp":"2026-06-11T21:28:30.792Z"}
+{"level":"info","message":"✅ Redis conectado com sucesso","timestamp":"2026-06-11T21:28:30.794Z"}
+{"level":"info","message":"✅ Servidor rodando em http://localhost:3333","timestamp":"2026-06-11T21:28:30.800Z"}
+{"level":"info","message":"📡 API disponível em http://localhost:3333/api/v1","timestamp":"2026-06-11T21:28:30.801Z"}
+{"level":"info","message":"🌎 Ambiente: development","timestamp":"2026-06-11T21:28:30.801Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:28:38 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:28:38.966Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:28:38 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:28:38.971Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:28:39 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:28:39.063Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:28:39 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:28:39.071Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:28:39 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:28:39.154Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:28:53 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:28:53.893Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:28:53 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:28:53.900Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:28:53 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:28:53.985Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:28:53 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:28:53.994Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:28:54 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:28:54.045Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:29:54 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:29:54.078Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:30:13 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:30:13.372Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:30:13 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:30:13.376Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:30:13 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:30:13.432Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:30:13 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:30:13.440Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:30:13 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:30:13.465Z"}
+{"body":{"cause":[],"error":null,"message":"internal_error","status":500},"level":"error","message":"Mercado Pago API error","path":"/v1/payments","status":500,"timestamp":"2026-06-11T21:30:19.525Z"}
+{"err":{"code":"MP_ERROR","isOperational":true,"statusCode":502},"level":"error","message":"Erro ao criar payment Mercado Pago","timestamp":"2026-06-11T21:30:19.535Z","transactionId":"6abcd014-f5bf-42d2-9f31-5c00b8b99f48"}
+{"code":"MP_ERROR","level":"warn","message":"Operational error Mercado Pago: internal_error","method":"POST","path":"/api/v1/financial/deposit","statusCode":502,"timestamp":"2026-06-11T21:30:19.536Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:30:19 +0000] \"POST /api/v1/financial/deposit HTTP/1.1\" 502 76 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:30:19.537Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:30:38 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:30:38.966Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:30:38 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:30:38.969Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:30:39 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:30:39.003Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:30:39 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:30:39.007Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:30:39 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:30:39.015Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:33:38 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:33:38.580Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:33:40 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:33:40.555Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:33:40 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:33:40.558Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:33:40 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:33:40.570Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:33:40 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:33:40.577Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:33:46 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:33:46.255Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:33:46 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:33:46.257Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:33:46 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:33:46.271Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:33:46 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:33:46.276Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:33:46 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:33:46.322Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:33:56 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:33:56.012Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:33:56 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:33:56.016Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:33:56 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:33:56.068Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:33:56 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:33:56.071Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:33:56 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:33:56.081Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:35:22 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:35:22.559Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:35:22 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:35:22.562Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:35:22 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:35:22.598Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:35:22 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:35:22.602Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:35:22 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:35:22.625Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:35:29 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:35:29.780Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:35:29 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:35:29.784Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:35:29 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:35:29.853Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:35:29 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:35:29.858Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:35:29 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:35:29.925Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:36:47 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:36:47.591Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:37:07 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:37:07.101Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:37:07 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:37:07.108Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:37:07 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:37:07.196Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:37:07 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:37:07.202Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:37:07 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:37:07.246Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:38:20 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:38:20.576Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:38:24 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:38:24.659Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:38:24 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:38:24.664Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:38:24 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:38:24.727Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:38:24 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:38:24.732Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:38:24 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:38:24.801Z"}
+{"body":{"cause":[{"code":4097,"data":"11-06-2026T21:38:54UTC;30743ac2-5fe6-4313-802e-591c88af2abe","description":""}],"error":"bad_request","message":"To generate a registered boleto the following parameters are required: payer.identification.type , payer.identification.number: Offline API Error","status":400},"level":"error","message":"Mercado Pago API error","path":"/v1/payments","status":400,"timestamp":"2026-06-11T21:38:54.760Z"}
+{"err":{"code":"MP_ERROR","isOperational":true,"statusCode":502},"level":"error","message":"Erro ao criar payment Mercado Pago","timestamp":"2026-06-11T21:38:54.771Z","transactionId":"fc2d916d-6792-4481-aab4-5986918149e5"}
+{"code":"MP_ERROR","level":"warn","message":"Operational error Mercado Pago: To generate a registered boleto the following parameters are required: payer.identification.type , payer.identification.number: Offline API Error","method":"POST","path":"/api/v1/financial/deposit","statusCode":502,"timestamp":"2026-06-11T21:38:54.774Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:38:54 +0000] \"POST /api/v1/financial/deposit HTTP/1.1\" 502 207 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:38:54.775Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:39:06 +0000] \"POST /api/v1/financial/deposit HTTP/1.1\" 200 302 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:39:06.577Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:39:06 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:39:06.591Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:39:32 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:39:32.133Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:39:32 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:39:32.148Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:39:32 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:39:32.213Z"}
+{"level":"http","message":"::1 - - [11/Jun/2026:21:39:32 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-11T21:39:32.223Z"}
