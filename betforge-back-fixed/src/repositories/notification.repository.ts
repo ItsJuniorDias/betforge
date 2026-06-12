@@ -25,7 +25,7 @@ export const NotificationRepository = {
         title: data.title,
         message: data.message,
         is_read: false,
-        metadata: JSON.stringify(data.metadata ?? {}),
+        metadata: data.metadata ?? {},
       })
       .returning("*");
     return notif;

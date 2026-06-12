@@ -20,9 +20,9 @@
  * serviço só precisa ler o banco — sem chamar a API externa novamente.
  */
 
-import { db } from '../config/database.js';
-import { BetService } from './bet.service.js';
-import { logger } from '../utils/logger.js';
+import { db } from "../config/database.js";
+import { BetService } from "./bet.service.js";
+import { logger } from "../utils/logger.js";
 
 // ─── Helpers de resultado ─────────────────────────────────────────────────────
 
@@ -38,13 +38,13 @@ function resolveWinners(
 ): string[] {
   const winners: string[] = [];
 
-  if (marketType === '1x2') {
+  if (marketType === "1x2") {
     if (homeScore > awayScore) winners.push(`${marketId}:home`);
     else if (awayScore > homeScore) winners.push(`${marketId}:away`);
     else winners.push(`${marketId}:draw`);
   }
 
-  if (marketType === 'over_under') {
+  if (marketType === "over_under") {
     const total = homeScore + awayScore;
     if (total > 2.5) winners.push(`${marketId}:over`);
     else winners.push(`${marketId}:under`);
@@ -64,19 +64,20 @@ export const SettlementService = {
     const startedAt = Date.now();
 
     // 1. Partidas finalizadas que têm pelo menos 1 aposta pendente
-    const finishedMatches = await db('matches')
-      .whereIn('id', function () {
-        this.select('match_id')
-          .from('bet_selections')
-          .whereIn('bet_id', function () {
-            this.select('id').from('bets').where('status', 'pending');
-          });
-      })
-      .where('status', 'finished')
-      .select('id', 'home_score', 'away_score');
+    // NOTA: bet_selections.match_id é VARCHAR(150), matches.id é UUID —
+    // cast explícito uuid::text evita o erro 42883 do Postgres.
+    const finishedMatches = await db("matches")
+      .whereRaw(
+        "id::text IN (SELECT match_id FROM bet_selections WHERE bet_id IN (SELECT id FROM bets WHERE status = ?))",
+        ["pending"],
+      )
+      .where("status", "finished")
+      .select("id", "home_score", "away_score");
 
     if (finishedMatches.length === 0) {
-      logger.debug('[Settlement] nenhuma partida finalizada com apostas pendentes');
+      logger.debug(
+        "[Settlement] nenhuma partida finalizada com apostas pendentes",
+      );
       return;
     }
 
@@ -89,20 +90,19 @@ export const SettlementService = {
 
     for (const match of finishedMatches) {
       // 2. Apostas pendentes com seleções nesta partida
-      const pendingBets = await db('bets')
-        .where('status', 'pending')
-        .whereIn('id', function () {
-          this.select('bet_id')
-            .from('bet_selections')
-            .where('match_id', match.id);
-        })
-        .select('id');
+      const pendingBets = await db("bets")
+        .where("status", "pending")
+        .whereRaw(
+          `id IN (SELECT bet_id FROM bet_selections WHERE match_id = ?::text)`,
+          [match.id],
+        )
+        .select("id");
 
       // 3. Mercados ativos desta partida (para saber os IDs reais dos mercados)
-      const markets = await db('markets')
-        .where('match_id', match.id)
-        .where('is_active', true)
-        .select('id', 'type');
+      const markets = await db("markets")
+        .where("match_id", match.id)
+        .where("is_active", true)
+        .select("id", "type");
 
       // 4. Montar lista de picks vencedores para todos os mercados desta partida
       const winnerPickIds: string[] = [];
@@ -130,8 +130,10 @@ export const SettlementService = {
           settled++;
         } catch (err: any) {
           // BetAlreadySettledError: aposta já foi resolvida por outro processo
-          if (err?.name === 'BetAlreadySettledError') continue;
-          logger.error(`[Settlement] erro ao liquidar aposta ${bet.id}: ${err?.message ?? err}`);
+          if (err?.name === "BetAlreadySettledError") continue;
+          logger.error(
+            `[Settlement] erro ao liquidar aposta ${bet.id}: ${err?.message ?? err}`,
+          );
           errors++;
         }
       }
@@ -151,12 +153,12 @@ export const SettlementService = {
   startScheduler(intervalMs = 5 * 60 * 1000): NodeJS.Timeout {
     // Passagem imediata ao iniciar
     this.settleFinishedMatches().catch((err) =>
-      logger.error('[Settlement] erro na passagem inicial:', err),
+      logger.error("[Settlement] erro na passagem inicial:", err),
     );
 
     const timer = setInterval(() => {
       this.settleFinishedMatches().catch((err) =>
-        logger.error('[Settlement] erro no scheduler:', err),
+        logger.error("[Settlement] erro no scheduler:", err),
       );
     }, intervalMs);
 

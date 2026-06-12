@@ -79,20 +79,6 @@ export type TransactionStatus =
   | "cancelled";
 export type PaymentMethod = "pix" | "credit_card" | "boleto" | "crypto" | "ted";
 
-export interface Transaction {
-  id: string;
-  user_id: string;
-  type: TransactionType;
-  status: TransactionStatus;
-  amount: number;
-  method?: PaymentMethod;
-  external_id?: string;
-  metadata?: Record<string, unknown>;
-  processed_at?: Date;
-  created_at: Date;
-  updated_at: Date;
-}
-
 // ─── Jogos / Mercados ─────────────────────────────────────────────────────────
 
 export type Sport =
@@ -192,10 +178,7 @@ export interface JwtPayload {
   exp?: number;
 }
 
-// ─── PATCH: adicionar ao types/index.ts ──────────────────────────────────────
-//
-// Substitua a interface Transaction existente por esta versão que inclui
-// o campo withdraw_available_at adicionado pela migration 005.
+// ─── Financeiro (Transaction) ────────────────────────────────────────────────
 
 export interface Transaction {
   id: string;
@@ -212,18 +195,3 @@ export interface Transaction {
   created_at: Date;
   updated_at: Date;
 }
-
-// ─── PATCH: adicionar ao retorno de getBalance ────────────────────────────────
-//
-// A resposta de GET /financial/balance agora inclui:
-//
-// {
-//   balance: number,
-//   bonusBalance: number,
-//   total: number,
-//   withdrawableBalance: number,       ← saldo disponível para saque
-//   lockedDeposits: Array<{
-//     amount: number,
-//     availableAt: string              ← ISO date
-//   }>
-// }
