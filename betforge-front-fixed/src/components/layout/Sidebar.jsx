@@ -182,22 +182,6 @@ export default function Sidebar() {
           active={location.pathname === "/withdraw"}
         />
       </div>
-
-      {/* Botões de auth */}
-      <div className="p-3 space-y-2">
-        <Link
-          to="/register"
-          className="block w-full text-center bg-[#C9A84C] hover:bg-[#F0D080] text-black font-semibold text-[13px] py-2 rounded-xl transition-colors no-underline"
-        >
-          Criar Conta
-        </Link>
-        <Link
-          to="/login"
-          className="block w-full text-center bg-[#181C23] border border-white/[0.06] hover:border-white/20 text-[#9B9590] hover:text-[#F0EDE6] text-[13px] py-2 rounded-xl transition-colors no-underline"
-        >
-          Entrar
-        </Link>
-      </div>
     </aside>
   );
 }
