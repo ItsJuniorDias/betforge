@@ -17,35 +17,19 @@ const METHODS = [
     min: 20,
     max: 50000,
   },
-  {
-    id: "ted" as const,
-    label: "TED",
-    icon: "🏦",
-    badge: "Mesmo dia",
-    badgeClass: "text-blue-400 bg-blue-400/10",
-    description: "Qualquer banco do Brasil",
-    min: 50,
-    max: 20000,
-  },
-  {
-    id: "crypto" as const,
-    label: "Cripto",
-    icon: "🪙",
-    badge: "Até 1h",
-    badgeClass: "text-purple-400 bg-purple-400/10",
-    description: "Bitcoin, Ethereum, USDT",
-    min: 100,
-    max: 100000,
-  },
 ] as const;
 
-type MethodId = typeof METHODS[number]["id"];
+type MethodId = (typeof METHODS)[number]["id"];
 
 const PIX_KEY_TYPES = [
-  { id: "cpf" as const,        label: "CPF",              placeholder: "000.000.000-00" },
-  { id: "email" as const,      label: "E-mail",           placeholder: "seu@email.com" },
-  { id: "phone" as const,      label: "Telefone",         placeholder: "+55 11 99999-9999" },
-  { id: "random_key" as const, label: "Chave Aleatória",  placeholder: "Cole sua chave aqui" },
+  { id: "cpf" as const, label: "CPF", placeholder: "000.000.000-00" },
+  { id: "email" as const, label: "E-mail", placeholder: "seu@email.com" },
+  { id: "phone" as const, label: "Telefone", placeholder: "+55 11 99999-9999" },
+  {
+    id: "random_key" as const,
+    label: "Chave Aleatória",
+    placeholder: "Cole sua chave aqui",
+  },
 ];
 
 const QUICK_AMOUNTS = [100, 200, 500, 750, 1000];
@@ -53,14 +37,18 @@ const QUICK_AMOUNTS = [100, 200, 500, 750, 1000];
 // ─── Página ───────────────────────────────────────────────────────────────────
 
 export default function WithdrawPage() {
-  const [method, setMethod]         = useState<MethodId>("pix");
-  const [amount, setAmount]         = useState("");
-  const [pixKey, setPixKey]         = useState("");
-  const [pixKeyType, setPixKeyType] = useState<WithdrawPayload["pixKeyType"]>("cpf");
-  const [bankData, setBankData]     = useState({
-    bank: "", agency: "", account: "", accountType: "checking" as const,
+  const [method, setMethod] = useState<MethodId>("pix");
+  const [amount, setAmount] = useState("");
+  const [pixKey, setPixKey] = useState("");
+  const [pixKeyType, setPixKeyType] =
+    useState<WithdrawPayload["pixKeyType"]>("cpf");
+  const [bankData, setBankData] = useState({
+    bank: "",
+    agency: "",
+    account: "",
+    accountType: "checking" as const,
   });
-  const [success, setSuccess]       = useState(false);
+  const [success, setSuccess] = useState(false);
   const [successMsg, setSuccessMsg] = useState("");
 
   const withdraw = useWithdraw();
@@ -77,8 +65,8 @@ export default function WithdrawPage() {
       method === "pix"
         ? { amount: numAmount, method, pixKey, pixKeyType }
         : method === "ted"
-        ? { amount: numAmount, method, bankData }
-        : { amount: numAmount, method };
+          ? { amount: numAmount, method, bankData }
+          : { amount: numAmount, method };
 
     withdraw.mutate(payload, {
       onSuccess: (res) => {
@@ -96,7 +84,8 @@ export default function WithdrawPage() {
     numAmount < selectedMethod.min ||
     numAmount > currentBalance ||
     (method === "pix" && !pixKey) ||
-    (method === "ted" && (!bankData.bank || !bankData.agency || !bankData.account));
+    (method === "ted" &&
+      (!bankData.bank || !bankData.agency || !bankData.account));
 
   const selectedPixKeyConfig = PIX_KEY_TYPES.find((k) => k.id === pixKeyType)!;
 
@@ -106,7 +95,8 @@ export default function WithdrawPage() {
       <p className="text-[#5A5750] text-sm mb-6">
         Disponível:{" "}
         <span className="text-[#C9A84C] font-semibold">
-          R$ {currentBalance.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}
+          R${" "}
+          {currentBalance.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}
         </span>
       </p>
 
@@ -126,7 +116,10 @@ export default function WithdrawPage() {
         {METHODS.map((m) => (
           <button
             key={m.id}
-            onClick={() => { setMethod(m.id); setAmount(""); }}
+            onClick={() => {
+              setMethod(m.id);
+              setAmount("");
+            }}
             className={`bg-[#111318] border rounded-xl p-4 text-left transition-all ${
               method === m.id
                 ? "border-[#C9A84C]/40 bg-[#C9A84C]/5"
@@ -135,7 +128,9 @@ export default function WithdrawPage() {
           >
             <div className="flex items-start justify-between mb-2">
               <span className="text-2xl">{m.icon}</span>
-              <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${m.badgeClass}`}>
+              <span
+                className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${m.badgeClass}`}
+              >
                 {m.badge}
               </span>
             </div>
@@ -193,7 +188,10 @@ export default function WithdrawPage() {
                 {PIX_KEY_TYPES.map((kt) => (
                   <button
                     key={kt.id}
-                    onClick={() => { setPixKeyType(kt.id); setPixKey(""); }}
+                    onClick={() => {
+                      setPixKeyType(kt.id);
+                      setPixKey("");
+                    }}
                     className={`py-2 text-[11px] font-semibold rounded-xl border transition-all ${
                       pixKeyType === kt.id
                         ? "border-[#C9A84C] text-[#C9A84C] bg-[#C9A84C]/10"
@@ -235,7 +233,9 @@ export default function WithdrawPage() {
                   type="text"
                   placeholder="Ex: 341"
                   value={bankData.bank}
-                  onChange={(e) => setBankData({ ...bankData, bank: e.target.value })}
+                  onChange={(e) =>
+                    setBankData({ ...bankData, bank: e.target.value })
+                  }
                   className="w-full bg-[#181C23] border border-white/[0.06] rounded-xl px-4 py-2.5 text-sm text-[#F0EDE6] placeholder-[#5A5750] focus:outline-none focus:border-[#C9A84C]/40 transition-colors"
                 />
               </div>
@@ -247,7 +247,9 @@ export default function WithdrawPage() {
                   type="text"
                   placeholder="Ex: 0001"
                   value={bankData.agency}
-                  onChange={(e) => setBankData({ ...bankData, agency: e.target.value })}
+                  onChange={(e) =>
+                    setBankData({ ...bankData, agency: e.target.value })
+                  }
                   className="w-full bg-[#181C23] border border-white/[0.06] rounded-xl px-4 py-2.5 text-sm text-[#F0EDE6] placeholder-[#5A5750] focus:outline-none focus:border-[#C9A84C]/40 transition-colors"
                 />
               </div>
@@ -260,7 +262,9 @@ export default function WithdrawPage() {
                 type="text"
                 placeholder="Ex: 12345-6"
                 value={bankData.account}
-                onChange={(e) => setBankData({ ...bankData, account: e.target.value })}
+                onChange={(e) =>
+                  setBankData({ ...bankData, account: e.target.value })
+                }
                 className="w-full bg-[#181C23] border border-white/[0.06] rounded-xl px-4 py-2.5 text-sm text-[#F0EDE6] placeholder-[#5A5750] focus:outline-none focus:border-[#C9A84C]/40 transition-colors"
               />
             </div>
@@ -271,7 +275,10 @@ export default function WithdrawPage() {
               <select
                 value={bankData.accountType}
                 onChange={(e) =>
-                  setBankData({ ...bankData, accountType: e.target.value as "checking" | "savings" })
+                  setBankData({
+                    ...bankData,
+                    accountType: e.target.value as "checking" | "savings",
+                  })
                 }
                 className="w-full bg-[#181C23] border border-white/[0.06] rounded-xl px-4 py-2.5 text-sm text-[#F0EDE6] focus:outline-none focus:border-[#C9A84C]/40 transition-colors"
               >
@@ -285,7 +292,8 @@ export default function WithdrawPage() {
         {/* Cripto */}
         {method === "crypto" && (
           <div className="bg-purple-500/5 border border-purple-500/10 rounded-xl px-4 py-3 text-purple-300/70 text-xs">
-            🪙 Após solicitar, entraremos em contato pelo e-mail cadastrado com as instruções.
+            🪙 Após solicitar, entraremos em contato pelo e-mail cadastrado com
+            as instruções.
           </div>
         )}
 

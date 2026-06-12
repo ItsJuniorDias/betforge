@@ -11,9 +11,9 @@
  *  - Buscar payment
  */
 
-import { env } from '../config/env.js';
-import { logger } from '../utils/logger.js';
-import { AppError } from '../utils/errors.js';
+import { env } from "../config/env.js";
+import { logger } from "../utils/logger.js";
+import { AppError } from "../utils/errors.js";
 
 // ─── Tipos Internos ───────────────────────────────────────────────────────────
 
@@ -63,9 +63,9 @@ export interface MpPayout {
 
 function getBaseHeaders() {
   return {
-    'Content-Type': 'application/json',
+    "Content-Type": "application/json",
     Authorization: `Bearer ${env.MP_ACCESS_TOKEN}`,
-    'X-Idempotency-Key': '',  // será preenchida por chamada
+    "X-Idempotency-Key": "", // será preenchida por chamada
   };
 }
 
@@ -78,12 +78,12 @@ async function mpRequest<T>(
   const url = `${env.MP_BASE_URL}${path}`;
 
   const headers: Record<string, string> = {
-    'Content-Type': 'application/json',
+    "Content-Type": "application/json",
     Authorization: `Bearer ${env.MP_ACCESS_TOKEN}`,
   };
 
   if (idempotencyKey) {
-    headers['X-Idempotency-Key'] = idempotencyKey;
+    headers["X-Idempotency-Key"] = idempotencyKey;
   }
 
   const res = await fetch(url, {
@@ -92,7 +92,7 @@ async function mpRequest<T>(
     body: body ? JSON.stringify(body) : undefined,
   });
 
-  const data = await res.json() as any;
+  const data = (await res.json()) as any;
 
   if (!res.ok) {
     const msg =
@@ -100,8 +100,12 @@ async function mpRequest<T>(
       data?.error ||
       data?.cause?.[0]?.description ||
       `Mercado Pago error ${res.status}`;
-    logger.error('Mercado Pago API error', { status: res.status, path, body: data });
-    throw new AppError(`Mercado Pago: ${msg}`, 502, 'MP_ERROR');
+    logger.error("Mercado Pago API error", {
+      status: res.status,
+      path,
+      body: data,
+    });
+    throw new AppError(`Mercado Pago: ${msg}`, 502, "MP_ERROR");
   }
 
   return data as T;
@@ -116,9 +120,9 @@ async function mpRequest<T>(
 export async function createPixPayment(params: {
   amountReais: number;
   description: string;
-  orderId: string;          // ID interno da transação (external_reference)
+  orderId: string; // ID interno da transação (external_reference)
   payerEmail: string;
-  payerCpf: string;         // apenas dígitos
+  payerCpf: string; // apenas dígitos
   payerFirstName: string;
   payerLastName: string;
   expiresInMinutes?: number; // default 60
@@ -128,18 +132,18 @@ export async function createPixPayment(params: {
   ).toISOString();
 
   return mpRequest<MpPixPayment>(
-    'POST',
-    '/v1/payments',
+    "POST",
+    "/v1/payments",
     {
       transaction_amount: params.amountReais,
       description: params.description,
-      payment_method_id: 'pix',
+      payment_method_id: "pix",
       date_of_expiration: expiresAt,
       payer: {
         email: params.payerEmail,
         first_name: params.payerFirstName,
         last_name: params.payerLastName,
-        identification: { type: 'CPF', number: params.payerCpf },
+        identification: { type: "CPF", number: params.payerCpf },
       },
       external_reference: params.orderId,
       notification_url: env.MP_WEBHOOK_URL,
@@ -162,21 +166,23 @@ export async function createBoletoPayment(params: {
 }): Promise<MpBoletoPayment> {
   const dueDate = new Date(
     Date.now() + (params.dueDays ?? 3) * 24 * 3600 * 1000,
-  ).toISOString().split('T')[0]; // YYYY-MM-DD
+  )
+    .toISOString()
+    .split("T")[0]; // YYYY-MM-DD
 
   return mpRequest<MpBoletoPayment>(
-    'POST',
-    '/v1/payments',
+    "POST",
+    "/v1/payments",
     {
       transaction_amount: params.amountReais,
       description: params.description,
-      payment_method_id: 'bolbradesco', // boleto Bradesco — mais aceito no MP BR
+      payment_method_id: "bolbradesco", // boleto Bradesco — mais aceito no MP BR
       date_of_expiration: `${dueDate}T23:59:59.000-03:00`,
       payer: {
         email: params.payerEmail,
         first_name: params.payerFirstName,
         last_name: params.payerLastName,
-        identification: { type: 'CPF', number: params.payerCpf },
+        identification: { type: "CPF", number: params.payerCpf },
       },
       external_reference: params.orderId,
       notification_url: env.MP_WEBHOOK_URL,
@@ -195,13 +201,13 @@ export async function createCreditCardPayment(params: {
   payerCpf: string;
   payerFirstName: string;
   payerLastName: string;
-  cardToken: string;          // token gerado pelo MP.js no frontend
+  cardToken: string; // token gerado pelo MP.js no frontend
   installments?: number;
-  issuerId?: string;           // opcional — emissora do cartão
+  issuerId?: string; // opcional — emissora do cartão
 }): Promise<MpCreditCardPayment> {
   return mpRequest<MpCreditCardPayment>(
-    'POST',
-    '/v1/payments',
+    "POST",
+    "/v1/payments",
     {
       transaction_amount: params.amountReais,
       description: params.description,
@@ -212,11 +218,11 @@ export async function createCreditCardPayment(params: {
         email: params.payerEmail,
         first_name: params.payerFirstName,
         last_name: params.payerLastName,
-        identification: { type: 'CPF', number: params.payerCpf },
+        identification: { type: "CPF", number: params.payerCpf },
       },
       external_reference: params.orderId,
       notification_url: env.MP_WEBHOOK_URL,
-      statement_descriptor: 'BETFORGE',
+      statement_descriptor: "BETFORGE",
     },
     params.orderId,
   );
@@ -225,13 +231,13 @@ export async function createCreditCardPayment(params: {
 // ─── Cancelar Payment ─────────────────────────────────────────────────────────
 
 export async function cancelPayment(paymentId: string): Promise<void> {
-  await mpRequest('PUT', `/v1/payments/${paymentId}`, { status: 'cancelled' });
+  await mpRequest("PUT", `/v1/payments/${paymentId}`, { status: "cancelled" });
 }
 
 // ─── Buscar Payment ───────────────────────────────────────────────────────────
 
 export async function getPayment(paymentId: string): Promise<any> {
-  return mpRequest('GET', `/v1/payments/${paymentId}`);
+  return mpRequest("GET", `/v1/payments/${paymentId}`);
 }
 
 // ─── Saque via PIX (Payout) ───────────────────────────────────────────────────
@@ -244,34 +250,36 @@ export async function getPayment(paymentId: string): Promise<any> {
 export async function createPixPayout(params: {
   amountReais: number;
   pixKey: string;
-  pixKeyType: 'cpf' | 'email' | 'phone' | 'random_key'; // 'evp' no MP
+  pixKeyType: "cpf" | "email" | "phone" | "random_key";
   holderName: string;
-  holderDocument: string; // CPF apenas dígitos
+  holderDocument: string;
   orderId: string;
 }): Promise<MpPayout> {
-  // Mapeamento do tipo de chave PIX para o padrão do Mercado Pago
   const mpKeyTypeMap: Record<string, string> = {
-    cpf: 'CPF',
-    email: 'EMAIL',
-    phone: 'PHONE',
-    random_key: 'EVP',
+    cpf: "CPF",
+    email: "EMAIL",
+    phone: "PHONE",
+    random_key: "EVP",
   };
 
   return mpRequest<MpPayout>(
-    'POST',
-    '/v1/disbursements',
+    "POST",
+    "/v1/settlements", // ✅ endpoint correto
     {
-      amount: params.amountReais,
-      description: `Saque BetForge #${params.orderId.slice(0, 8)}`,
       external_reference: params.orderId,
+      description: `Saque BetForge #${params.orderId.slice(0, 8)}`,
       receiver: {
-        document: { type: 'CPF', number: params.holderDocument },
-        first_name: params.holderName.split(' ')[0],
-        last_name: params.holderName.split(' ').slice(1).join(' ') || params.holderName,
-      },
-      pix: {
+        type: "pix",
         key: params.pixKey,
-        key_type: mpKeyTypeMap[params.pixKeyType] ?? 'CPF',
+        key_type: mpKeyTypeMap[params.pixKeyType] ?? "CPF",
+      },
+      amount: {
+        value: params.amountReais,
+        currency_id: "BRL",
+      },
+      payer: {
+        name: params.holderName,
+        document: { type: "CPF", number: params.holderDocument },
       },
     },
     params.orderId,
