@@ -1,0 +1,25 @@
+{"level":"info","message":"🚀 Iniciando BetForge API...","timestamp":"2026-06-12T08:12:10.922Z"}
+{"error":{"code":"ECONNREFUSED"},"level":"error","message":"❌ Falha ao conectar no banco de dados","timestamp":"2026-06-12T08:12:10.938Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 242 (usados: 258)","timestamp":"2026-06-12T08:17:25.830Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 242 (usados: 258)","timestamp":"2026-06-12T08:17:25.836Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 242 (usados: 258)","timestamp":"2026-06-12T08:17:26.316Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 242 (usados: 258)","timestamp":"2026-06-12T08:17:26.523Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 242 (usados: 258)","timestamp":"2026-06-12T08:17:26.992Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 242 (usados: 258)","timestamp":"2026-06-12T08:17:27.218Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 242 (usados: 258)","timestamp":"2026-06-12T08:17:27.904Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 242 (usados: 258)","timestamp":"2026-06-12T08:17:27.908Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 242 (usados: 258)","timestamp":"2026-06-12T08:17:28.371Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 242 (usados: 258)","timestamp":"2026-06-12T08:17:28.611Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 242 (usados: 258)","timestamp":"2026-06-12T08:17:29.285Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 242 (usados: 258)","timestamp":"2026-06-12T08:17:29.299Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 240 (usados: 260)","timestamp":"2026-06-12T08:17:29.990Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 238 (usados: 262)","timestamp":"2026-06-12T08:17:29.993Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 236 (usados: 264)","timestamp":"2026-06-12T08:17:30.628Z"}
+{"level":"debug","message":"[OddsAPI] créditos restantes: 234 (usados: 266)","timestamp":"2026-06-12T08:17:30.635Z"}
+{"level":"info","message":"🚀 Iniciando BetForge API...","timestamp":"2026-06-12T08:17:43.899Z"}
+{"level":"info","message":"✅ Banco de dados conectado com sucesso","timestamp":"2026-06-12T08:17:43.929Z"}
+{"level":"info","message":"✅ Redis conectado com sucesso","timestamp":"2026-06-12T08:17:43.933Z"}
+{"level":"info","message":"✅ Servidor rodando em http://localhost:3333","timestamp":"2026-06-12T08:17:43.941Z"}
+{"level":"info","message":"📡 API disponível em http://localhost:3333/api/v1","timestamp":"2026-06-12T08:17:43.941Z"}
+{"level":"info","message":"🌎 Ambiente: development","timestamp":"2026-06-12T08:17:43.941Z"}
+{"level":"info","message":"⚡ Recebido SIGINT. Encerrando graciosamente...","timestamp":"2026-06-12T08:18:13.035Z"}

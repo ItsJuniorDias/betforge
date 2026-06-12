@@ -580,38 +580,3 @@
 {"level":"info","message":"[OddsSync] sync concluído em 3241ms — 10 eventos","timestamp":"2026-06-12T00:00:59.054Z"}
 {"level":"http","message":"::1 - - [12/Jun/2026:00:00:59 +0000] \"GET /api/v1/games/live HTTP/1.1\" 200 46 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-12T00:00:59.064Z"}
 {"level":"http","message":"::1 - - [12/Jun/2026:00:00:59 +0000] \"GET /api/v1/games?status=scheduled&limit=6 HTTP/1.1\" 200 2832 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-12T00:00:59.136Z"}
-{"level":"debug","message":"[OddsAPI] créditos restantes: 250 (usados: 250)","timestamp":"2026-06-12T00:03:19.606Z"}
-{"level":"debug","message":"[OddsAPI] créditos restantes: 250 (usados: 250)","timestamp":"2026-06-12T00:03:19.617Z"}
-{"level":"info","message":"[OddsSync] soccer_brazil_campeonato: 0 jogos sincronizados","timestamp":"2026-06-12T00:03:19.618Z"}
-{"level":"debug","message":"[OddsAPI] créditos restantes: 250 (usados: 250)","timestamp":"2026-06-12T00:03:20.007Z"}
-{"level":"debug","message":"[OddsAPI] créditos restantes: 250 (usados: 250)","timestamp":"2026-06-12T00:03:20.064Z"}
-{"level":"info","message":"[OddsSync] soccer_uefa_champs_league: 0 jogos sincronizados","timestamp":"2026-06-12T00:03:20.064Z"}
-{"level":"debug","message":"[OddsAPI] créditos restantes: 250 (usados: 250)","timestamp":"2026-06-12T00:03:20.237Z"}
-{"level":"debug","message":"[OddsAPI] créditos restantes: 250 (usados: 250)","timestamp":"2026-06-12T00:03:20.446Z"}
-{"level":"info","message":"[OddsSync] soccer_epl: 0 jogos sincronizados","timestamp":"2026-06-12T00:03:20.447Z"}
-{"level":"debug","message":"[OddsAPI] créditos restantes: 250 (usados: 250)","timestamp":"2026-06-12T00:03:20.604Z"}
-{"level":"debug","message":"[OddsAPI] créditos restantes: 250 (usados: 250)","timestamp":"2026-06-12T00:03:20.827Z"}
-{"level":"info","message":"[OddsSync] soccer_spain_la_liga: 0 jogos sincronizados","timestamp":"2026-06-12T00:03:20.827Z"}
-{"level":"debug","message":"[OddsAPI] créditos restantes: 250 (usados: 250)","timestamp":"2026-06-12T00:03:21.211Z"}
-{"level":"debug","message":"[OddsAPI] créditos restantes: 250 (usados: 250)","timestamp":"2026-06-12T00:03:21.221Z"}
-{"level":"info","message":"[OddsSync] soccer_italy_serie_a: 0 jogos sincronizados","timestamp":"2026-06-12T00:03:21.221Z"}
-{"level":"debug","message":"[OddsAPI] créditos restantes: 250 (usados: 250)","timestamp":"2026-06-12T00:03:21.603Z"}
-{"level":"debug","message":"[OddsAPI] créditos restantes: 250 (usados: 250)","timestamp":"2026-06-12T00:03:21.624Z"}
-{"level":"info","message":"[OddsSync] soccer_germany_bundesliga: 0 jogos sincronizados","timestamp":"2026-06-12T00:03:21.624Z"}
-{"level":"debug","message":"[OddsAPI] créditos restantes: 248 (usados: 252)","timestamp":"2026-06-12T00:03:22.012Z"}
-{"level":"debug","message":"[OddsAPI] créditos restantes: 246 (usados: 254)","timestamp":"2026-06-12T00:03:22.023Z"}
-{"level":"info","message":"[OddsSync] soccer_conmebol_copa_libertadores: 9 jogos sincronizados","timestamp":"2026-06-12T00:03:22.200Z"}
-{"level":"debug","message":"[OddsAPI] créditos restantes: 244 (usados: 256)","timestamp":"2026-06-12T00:03:22.584Z"}
-{"level":"debug","message":"[OddsAPI] créditos restantes: 242 (usados: 258)","timestamp":"2026-06-12T00:03:22.591Z"}
-{"level":"info","message":"[OddsSync] basketball_nba: 1 jogos sincronizados","timestamp":"2026-06-12T00:03:22.609Z"}
-{"level":"info","message":"[OddsSync] sync concluído em 3478ms — 10 eventos","timestamp":"2026-06-12T00:03:22.610Z"}
-{"level":"http","message":"::1 - - [12/Jun/2026:00:03:22 +0000] \"GET /api/v1/games/live HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-12T00:03:22.615Z"}
-{"level":"debug","message":"[OddsSync] cache válido, pulando sync","timestamp":"2026-06-12T00:03:29.162Z"}
-{"level":"http","message":"::1 - - [12/Jun/2026:00:03:29 +0000] \"GET /api/v1/games?status=scheduled&limit=6 HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-12T00:03:29.223Z"}
-{"level":"http","message":"::1 - - [12/Jun/2026:00:03:55 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-12T00:03:55.922Z"}
-{"level":"http","message":"::1 - - [12/Jun/2026:00:04:04 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-12T00:04:04.220Z"}
-{"level":"http","message":"::1 - - [12/Jun/2026:00:04:04 +0000] \"GET /api/v1/auth/me HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-12T00:04:04.224Z"}
-{"level":"http","message":"::1 - - [12/Jun/2026:00:04:04 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-12T00:04:04.354Z"}
-{"level":"http","message":"::1 - - [12/Jun/2026:00:04:04 +0000] \"GET /api/v1/users/profile HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-12T00:04:04.364Z"}
-{"level":"http","message":"::1 - - [12/Jun/2026:00:04:04 +0000] \"GET /api/v1/financial/balance HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\"","timestamp":"2026-06-12T00:04:04.389Z"}
-{"level":"info","message":"⚡ Recebido SIGINT. Encerrando graciosamente...","timestamp":"2026-06-12T00:04:24.454Z"}
